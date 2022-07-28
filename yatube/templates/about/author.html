@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Об авторе проекта{% endblock %}
+{% block content %}
+<div class="container py-5">
+  <h1>Привет, я Лиза</h1>
+  <br>
+  <div class="clearfix row justify-content-between align-items-center">
+    <div class="col-md-7 float-md-end mb-4 ms-md-4">
+      <div>
+        <figure class="text-end">
+          <blockquote class="blockquote">
+            <p class="quote">
+              Профессия изначально должна быть актом любви. И никак не браком 
+              по расчету.
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer">Харуки Мураками</figcaption>
+        </figure>
+        <div class="align">
+          <p>
+            Меня зовут Лиза. Я ученый по профессии и программист по призванию 
+            :)
+          </p>
+          <p>
+            Программирование меня интересует еще со школы, но мне так 
+            хотелось увидеть весь мир, что в университет поступила по зову 
+            души, а не сердца. Оказалось, что география может быть совершенно 
+            стационарной, а учеба и работа не по призванию могут отнимать все 
+            силы и разрушать ментальное и физическое здоровье. Но теперь я 
+            чувствую, что нахожусь на правильном пути!
+          </p>
+          <p>
+            Меня невероятно вдохновляет работа разработчика! Сложно объяснить 
+            это непередаваемое чувство наслаждения от реализации поставленных 
+            задач в коде. Серфинг по интернету, поиск решений, идеи, которые 
+            загораются в голове как лампочки, и все эти загадочные для 
+            обычного человека буковки в коде - ну что может быть лучше?!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 float-md-end mb-2 ms-md-2">
+      <img src="{% static 'img/author_photo1.png' %}">
+    </div>
+  </div>
+  <div class="clearfix row justify-content-between align-items-center">
+    <div class="col-md-4 float-md-end mb-2 ms-md-2">
+      <figure class="figure">
+        <img src="{% static 'img/author_photo3.png' %}">
+        <figcaption class="figure-caption text-end">
+          С компьютерной мышью у нас отношения близкие
+        </figcaption>
+      </figure>
+    </div>
+    <div class="col-md-7 float-md-end mb-4 ms-md-4">
+      <div class="align">
+        <p>
+          У меня есть небольшой бэкграунд в программировании. В моем 
+          послужном списке:
+          <ul style="margin-left: 50px">
+            <li>
+              Fortran (один из старейших языков программирования активно 
+              используется в численных моделях прогноза погоды),
+            </li>
+            <li>Pascal,</li>
+            <li>LISP,</li>
+            <li>C и C++,</li>
+            <li><b>Python</b>,</li>
+            <li>программные пакеты Matlab и NCO,</li>
+            <li>язык разметки HTML и язык запросов <b>SQL</b>,</li>
+            <li>
+              командные оболочки Unix (<b>bash</b>) и Windows (Windows 
+              PowerShell)
+            </li>
+            <li>и моя самая большая гордость - КуМир :)</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix row justify-content-between align-items-center">
+    <div class="col-md-7 float-md-end mb-4 ms-md-4">
+        <figure class="text-end">
+          <blockquote class="blockquote">
+            <p class="quote">
+              Труд по обязанности ‒ это работа, а работа по склонности ‒ 
+              досуг.
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer">Джордж Бернард Шоу</figcaption>
+        </figure>
+      <div class="align">
+        <p>
+          Так что же о досуге? Сложно перечислить все, что меня интересует в 
+          этой жизни (поскольку я увлекающийся человек), да и невозможно 
+          заниматься всем подряд ‒ я же не робот. Поэтому я достаточно четко 
+          определилась со своими приоритетами: очень люблю работать (если 
+          работа действительно мне интересна, будет сложно меня от нее 
+          оторвать), жить не могу без путешествий (и влюбляюсь в любое место 
+          посещения), получаю энергию, занимаясь акробатикой (акробатическая 
+          дорожка), испытываю наслаждение от изучения языков ‒ и иностранных, 
+          и программирования (свое сердечко отдала норвежскому, Python и C++).
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4 float-md-end mb-2 ms-md-2">
+      <figure class="figure">
+        <img src="{% static 'img/author_photo2.png' %}">
+        <figcaption class="figure-caption text-end">
+          Уровень акробатической подготовки ‒ "лицом в землю" :)
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+  <br>
+  <h3>Больше обо мне, моих проектах и увлечениях здесь:</h3>
+  <br>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Ресурс</th>
+        <th scope="col">Ссылка</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Github<br>(на случай интереса к моему портфолио разработчика)</td>
+        <td><a href="https://github.com/photometer/">@photometer</a></td>
+      </tr>
+      <tr>
+        <td>ИСТИНА<br>(о результатах моей научной деятельности)</td>
+        <td>
+          <a href="https://istina.msu.ru/profile/androsovaelizaveta/">
+            @androsovaelizaveta
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Instagram<br>(о моей жизни в ярких красках)</td>
+        <td>
+          <a href="https://instagram.com/lizaandrosova/">@lizaandrosova</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <figure class="figure row justify-content-evenly">
+    <img src="{% static 'img/author_photo4.png' %}" class="col-3">
+    <img src="{% static 'img/author_photo5.png' %}" class="col-7">
+    <figcaption class="figure-caption text-center">
+      Фото моих рабочих столов на память :)
+    </figcaption>
+  </figure>
+</div>
+{% endblock %}
